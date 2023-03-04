@@ -87,10 +87,17 @@
 // const message2 = `My name is ${name}. I am ${age} years old.`
 // console.log(message2)
 
-const myProfile = ["jake", 28];
-const message3 = `My name is ${myProfile[0]}. I am ${myProfile[1]} years old.`
-console.log(message3)
+// const myProfile = ["jake", 28];
+// const message3 = `My name is ${myProfile[0]}. I am ${myProfile[1]} years old.`
+// console.log(message3)
 
-const [name, age ] = myProfile;
-const message4 = `My name is ${name}. I am ${age} years old.`
-console.log(message4)
+// const [name, age ] = myProfile;
+// const message4 = `My name is ${name}. I am ${age} years old.`
+// console.log(message4)
+
+/**
+ * lesson23 デフォルト値
+ */
+
+const sayHello = (name = "guest") => console.log(`Hello, ${name}`);
+sayHello();

@@ -54,19 +54,43 @@
 //   return str;
 // }
 
-const func1 = function(str){
-  return str;
-}
+// const func1 = function(str){
+//   return str;
+// }
 
-console.log(func1("func1です。"))
-// アロー関数
-const func2 = str => {
-  return str; // 一行のときは{return}も省略可能。
-}
-console.log(func2("func2です。"))
+// console.log(func1("func1です。"))
+// // アロー関数
+// const func2 = str => {
+//   return str; // 一行のときは{return}も省略可能。
+// }
+// console.log(func2("func2です。"))
 
 
-const func3 = (num1, num2)=>{
-  return num1 + num2;
-}
-console.log(func3(10,20))
+// const func3 = (num1, num2)=>{
+//   return num1 + num2;
+// }
+// console.log(func3(10,20))
+
+/**
+ * lesson21 分割代入
+ */
+
+// const myProfile = {
+//   name: "jake",
+//   age:28,
+  
+// };
+// const message1 = `My name is ${myProfile.name}. I am ${myProfile.age} years old.`
+// console.log(message1)
+
+// const {name, age} = myProfile;
+// const message2 = `My name is ${name}. I am ${age} years old.`
+// console.log(message2)
+
+const myProfile = ["jake", 28];
+const message3 = `My name is ${myProfile[0]}. I am ${myProfile[1]} years old.`
+console.log(message3)
+
+const [name, age ] = myProfile;
+const message4 = `My name is ${name}. I am ${age} years old.`
+console.log(message4)

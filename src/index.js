@@ -34,13 +34,39 @@
  * テンプレート文字列
  */
 
-const name = "jake";
-const age = 28;
+// const name = "jake";
+// const age = 28;
+
+// // 従来の方法
+// const message1 = "My name is " + name ;
+// console.log(message1)
+
+// // 現在の方法
+// const message2 = `My name is ${name}`
+// console.log(message2)
+
+/**
+ * アロー関数
+ */
 
 // 従来の方法
-const message1 = "My name is " + name ;
-console.log(message1)
+// function func1(str){
+//   return str;
+// }
 
-// 現在の方法
-const message2 = `My name is ${name}`
-console.log(message2)
+const func1 = function(str){
+  return str;
+}
+
+console.log(func1("func1です。"))
+// アロー関数
+const func2 = str => {
+  return str; // 一行のときは{return}も省略可能。
+}
+console.log(func2("func2です。"))
+
+
+const func3 = (num1, num2)=>{
+  return num1 + num2;
+}
+console.log(func3(10,20))

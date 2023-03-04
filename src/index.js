@@ -122,14 +122,65 @@
 // console.log(num2)
 // console.log(arr3)
 
-// 配列のコピー
-const arr4 = [10,20];
-const arr5 = [30,40];
+// // 配列のコピー
+// const arr4 = [10,20];
+// const arr5 = [30,40];
 
-const arr6 = [...arr4]
+// const arr6 = [...arr4]
 
-console.log(arr6)
-const arr7 = [...arr4, ...arr5];
-console.log(arr7)
+// console.log(arr6)
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7)
+
+
+// lesson 25 map filter
+const nameArr = ["Tanaka", "Yamada", "Jake"];
+// for (let index = 0;index < nameArr.length; index++){
+//   console.log(nameArr[index])
+// }
+
+// const nameArr2 = nameArr.map((name) =>{
+//   return name;
+// })
+// console.log(nameArr2)
+
+// nameArr.map((name, index)=> console.log(`${index}番目は${name}です。`));
+
+// const numArr = [1,2,3,4,5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// })
+// console.log(newNumArr);
+
+// const newNameArr = nameArr.map((name)=> {
+//   if (name === "Jake"){
+//     return name
+//   }else{
+//     return `${name}さん`
+//   }
+// })
+// console.log(newNameArr)
+
+/**
+ * 三項演算子
+ */
+// 条件 ? trueのとき  : falseのとき
+
+const val1 = 1 < 0 ? 'true' : "false";
+console.log(val1)
+
+
+const num = "a";
+console.log(num.toLocaleString());
+
+const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください。';
+console.log(formattedNum)
+
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? '100を超えています！！' : '許容範囲内です。';
+}
+console.log(checkSum(111,-20))
+
 
 

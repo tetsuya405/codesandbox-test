@@ -1,3 +1,5 @@
+// lesson19
+
 // var val1 = "var変数"
 // console.log(val1)
 
@@ -24,3 +26,21 @@
 // val5[0] = 'bird';
 // val5.push("monkey")
 // console.log(val5)
+
+
+// lesson20
+
+/**
+ * テンプレート文字列
+ */
+
+const name = "jake";
+const age = 28;
+
+// 従来の方法
+const message1 = "My name is " + name ;
+console.log(message1)
+
+// 現在の方法
+const message2 = `My name is ${name}`
+console.log(message2)
